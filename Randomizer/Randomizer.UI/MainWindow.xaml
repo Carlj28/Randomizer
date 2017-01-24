@@ -1,0 +1,56 @@
+﻿<Window x:Class="Randomizer.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Randomizer.UI"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        mc:Ignorable="d"
+        Title="Randomizer" Height="350" Width="525">
+    <Grid>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Algorithm:" Margin="0, 0, 10, 0"></TextBlock>
+            <ComboBox Width="100" ItemsSource="{Binding Algorithms}" SelectedItem="{Binding SelectedAlgorithm}"></ComboBox>
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal" Grid.Column="1">
+            <TextBlock Text="Attempts:" Margin="0, 0, 10, 0"></TextBlock>
+            <TextBox Width="50" Text="{Binding TryCounts}"></TextBox>
+
+            <TextBlock Text="Countdown to:" Margin="0, 0, 10, 0"></TextBlock>
+            <TextBox Width="50" Text="{Binding Counter}"></TextBox>
+        </StackPanel>
+        <lvc:CartesianChart Grid.Row="1" Grid.Column="0" Series="{Binding AlgorithmSeriesCollection}">
+        </lvc:CartesianChart>
+
+        <StackPanel Grid.Column="1" Grid.Row="1">
+            <TextBlock>
+                <TextBlock.Text>
+                    <Binding StringFormat="Average: {0}" Path="Average"></Binding>
+                </TextBlock.Text>
+            </TextBlock>
+            
+            <TextBlock>
+                <TextBlock.Text>
+                    <Binding StringFormat="Variation: {0}" Path="Variation"></Binding>
+                </TextBlock.Text>
+            </TextBlock>
+
+            <TextBlock>
+                <TextBlock.Text>
+                    <Binding StringFormat="Median: {0}" Path="Median"></Binding>
+                </TextBlock.Text>
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+</Window>

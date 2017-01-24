@@ -1,0 +1,8 @@
+C:\Users\Bartek\Documents\Ninject-Sample\Randomizer\RandomizerConsole\bin\Debug\RandomizerConsole.exe.config
+C:\Users\Bartek\Documents\Ninject-Sample\Randomizer\RandomizerConsole\bin\Debug\RandomizerConsole.exe
+C:\Users\Bartek\Documents\Ninject-Sample\Randomizer\RandomizerConsole\bin\Debug\RandomizerConsole.pdb
+C:\Users\Bartek\Documents\Ninject-Sample\Randomizer\RandomizerConsole\bin\Debug\Randomizer.dll
+C:\Users\Bartek\Documents\Ninject-Sample\Randomizer\RandomizerConsole\bin\Debug\Randomizer.pdb
+C:\Users\Bartek\Documents\Ninject-Sample\Randomizer\RandomizerConsole\obj\Debug\RandomizerConsole.csprojResolveAssemblyReference.cache
+C:\Users\Bartek\Documents\Ninject-Sample\Randomizer\RandomizerConsole\obj\Debug\RandomizerConsole.exe
+C:\Users\Bartek\Documents\Ninject-Sample\Randomizer\RandomizerConsole\obj\Debug\RandomizerConsole.pdb
